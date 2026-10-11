@@ -42,6 +42,6 @@ header{height:100px}.brand img{width:min(460px,80vw);height:140px}.card-image{he
 @media(max-width:1100px){.button-bar{grid-template-columns:auto auto;gap:14px}.button-bar .controls{grid-column:1/-1;grid-row:1}.button-bar>#restart{grid-column:1;grid-row:2}.button-bar>#sound{grid-column:2;grid-row:2}}
 @media(max-width:700px) and (orientation:portrait){.button-bar{gap:16px;margin-top:6px}.button-bar>.quiet{font-size:12px;padding:10px 14px}.button-bar .controls{gap:8px}}
 @media(max-height:600px) and (orientation:landscape){.button-bar{gap:10px}.button-bar>.quiet{font-size:11px;padding:8px 12px}}
-.game-top{background:transparent;border:0;box-shadow:none;border-radius:0;padding-left:10px;padding-right:10px}header{height:126px;padding-top:14px}.brand img{width:min(620px,88vw);height:180px}.card-image{height:clamp(170px,36dvh,390px)}
-@media(max-width:700px) and (orientation:portrait){header{height:92px;padding-top:12px}.brand img{width:min(380px,97vw);height:126px}.card-image{height:clamp(115px,17dvh,190px)}}
-@media(max-height:600px) and (orientation:landscape){header{height:46px;padding-top:7px}.brand img{width:300px;height:90px}.card-image{height:21dvh;min-height:70px}}
+.game-top{background:transparent;border:0;box-shadow:none;border-radius:0;padding-left:10px;padding-right:10px}header{height:150px;padding-top:34px}.brand img{width:min(680px,90vw);height:198px}.card-image{height:clamp(170px,36dvh,390px)}
+@media(max-width:700px) and (orientation:portrait){header{height:106px;padding-top:24px}.brand img{width:min(410px,97vw);height:136px}.card-image{height:clamp(115px,17dvh,190px)}}
+@media(max-height:600px) and (orientation:landscape){header{height:54px;padding-top:13px}.brand img{width:320px;height:96px}.card-image{height:21dvh;min-height:70px}}
