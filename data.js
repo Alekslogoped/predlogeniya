@@ -11,5 +11,5 @@ window.GAME_DATA = (() => {
  moods:[mood('brave','смелый','смелая','Щит со звездой — смелый'),mood('happy','весёлый','весёлая','Весёлое жёлтое личико'),mood('agile','ловкий','ловкая','Жонглирующие мячики — ловкий'),mood('affectionate','ласковый','ласковая','Ладони с сердцем — ласковый'),mood('nice','славный','славная','Доброе солнышко — славный')],
  pairs:[{id:'stroke_squirrel',actionId:'stroke',objectId:'squirrel'},{id:'break_chocolate',actionId:'break',objectId:'chocolate'},{id:'catch_kolobok',actionId:'catch',objectId:'kolobok'},{id:'push_boat',actionId:'push',objectId:'boat'},{id:'put_doll_to_bed',actionId:'put-to-bed',objectId:'doll'}],
  backgrounds:['assets/backgrounds/game-background.png'],
- interface:['assets/interface/machine-lever.png']};
+ interface:['assets/interface/machine-lever.png','assets/interface/title-logo.png']};
 })();
