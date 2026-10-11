@@ -1,40 +1,35 @@
-# Иллюстрации «Крути и говори!»
+# Пользовательские изображения
 
-Все 22 изображения созданы специально для проекта из оригинальных геометрических векторных рисунков. Внешние изображения, emoji, CDN и готовые стоки не использованы. Источник — `assets-source.py`; экспорт выполнен CairoSVG 2.9.1. Исходные описания — предоставленное ТЗ.
+Источник: архив `Kruti_i_govori_assets_and_TZ.zip`, предоставленный пользователем. 20 PNG перенесены без изменения байтов; корпус заменён исправленной генерацией. В архиве использована более ранняя редакция ТЗ; реализация ориентируется на отдельно приложенное новое ТЗ.
 
-Карточки — PNG RGBA 1024×1024 с настоящей прозрачностью; фоны — непрозрачные PNG 1920×1080. Иллюстрации готовы и включены в игру. Узнаваемость действий взрослым/детьми пока не подтверждена; галерея для просмотра находится в настройках взрослого.
+| Файл | Статус |
+|---|---|
+| `assets/actions/action-break.png` | Подключён без изменения |
+| `assets/actions/action-catch.png` | Подключён без изменения |
+| `assets/actions/action-push.png` | Подключён без изменения |
+| `assets/actions/action-put-to-bed.png` | Подключён без изменения |
+| `assets/actions/action-stroke.png` | Подключён без изменения |
+| `assets/backgrounds/game-background.png` | Подключён без изменения |
+| `assets/heroes/hero-elephant.png` | Подключён без изменения |
+| `assets/heroes/hero-mila.png` | Подключён без изменения |
+| `assets/heroes/hero-pavel.png` | Подключён без изменения |
+| `assets/heroes/hero-wolf.png` | Подключён без изменения |
+| `assets/interface/machine-frame.png` | Сгенерирован из пользовательского корпуса: ручка удалена, центр очищен |
+| `assets/moods/mood-angry.png` | Подключён без изменения |
+| `assets/moods/mood-happy.png` | Подключён без изменения |
+| `assets/moods/mood-sad.png` | Подключён без изменения |
+| `assets/moods/mood-sleepy.png` | Подключён без изменения |
+| `assets/moods/mood-surprised.png` | Подключён без изменения |
+| `assets/objects/object-boat.png` | Подключён без изменения |
+| `assets/objects/object-chocolate.png` | Подключён без изменения |
+| `assets/objects/object-doll.png` | Подключён без изменения |
+| `assets/objects/object-kolobok.png` | Подключён без изменения |
+| `assets/objects/object-squirrel.png` | Подключён без изменения |
+| `assets/heroes/hero-horse.png` | Предоставлен пользователем отдельно, подключён без изменения |
+| `assets/interface/machine-lever.png` | Сгенерирован и подключён |
 
-| Файл | Размер | Статус |
-|---|---|---|
-| `assets/actions/action-break.png` | 1024×1024 | Создан, включён |
-| `assets/actions/action-catch.png` | 1024×1024 | Создан, включён |
-| `assets/actions/action-push.png` | 1024×1024 | Создан, включён |
-| `assets/actions/action-put-to-bed.png` | 1024×1024 | Создан, включён |
-| `assets/actions/action-stroke.png` | 1024×1024 | Создан, включён |
-| `assets/backgrounds/cover-background.png` | 1920×1080 | Создан, включён |
-| `assets/backgrounds/game-background.png` | 1920×1080 | Создан, включён |
-| `assets/heroes/hero-elephant.png` | 1024×1024 | Создан, включён |
-| `assets/heroes/hero-horse.png` | 1024×1024 | Создан, включён |
-| `assets/heroes/hero-mila.png` | 1024×1024 | Создан, включён |
-| `assets/heroes/hero-pavel.png` | 1024×1024 | Создан, включён |
-| `assets/heroes/hero-wolf.png` | 1024×1024 | Создан, включён |
-| `assets/moods/mood-angry.png` | 1024×1024 | Создан, включён |
-| `assets/moods/mood-happy.png` | 1024×1024 | Создан, включён |
-| `assets/moods/mood-sad.png` | 1024×1024 | Создан, включён |
-| `assets/moods/mood-sleepy.png` | 1024×1024 | Создан, включён |
-| `assets/moods/mood-surprised.png` | 1024×1024 | Создан, включён |
-| `assets/objects/object-boat.png` | 1024×1024 | Создан, включён |
-| `assets/objects/object-chocolate.png` | 1024×1024 | Создан, включён |
-| `assets/objects/object-doll.png` | 1024×1024 | Создан, включён |
-| `assets/objects/object-kolobok.png` | 1024×1024 | Создан, включён |
-| `assets/objects/object-squirrel.png` | 1024×1024 | Создан, включён |
+План полного набора: 20 карточек, фон, неподвижный корпус и отдельный рычаг — 23 файла. Предоставленные карточки имеют размер 1254×1254, фон — 1672×941. Размеры новых генераций сохраняются без растягивания в интерфейсе. Автоматический повторный экспорт старой графики удалён, чтобы не перезаписать пользовательские изображения.
 
-## Повторный экспорт (не нужен для запуска игры)
+Корпус и рычаг созданы инструментом image_gen по запросу пользователя. Оригиналы сохранены в `/workspace/generated_images/`. Все изображения имеют настоящий прозрачный внешний фон.
 
-```sh
-python3 -m venv /tmp/kg-art-venv
-/tmp/kg-art-venv/bin/pip install CairoSVG==2.9.1
-/tmp/kg-art-venv/bin/python assets-source.py
-```
-
-Экспорт заменяет только созданные изображения в `assets/`; не запускайте его поверх собственных заменённых иллюстраций. Рисунки используют единый контур и пастельную палитру; действия — плоские знаки с тёмно-синим контуром, оранжевым акцентом и светлой заливкой.
+Полный набор содержит 23 PNG. Лошадь получена из отдельного пользовательского ZIP; предыдущий блокер устранён.

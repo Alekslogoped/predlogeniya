@@ -10,5 +10,6 @@ window.GAME_DATA = (() => {
  objects:[object('squirrel','белка','белку','Рыжая белка с пушистым хвостом'),object('chocolate','шоколад','шоколад','Плитка шоколада без упаковки'),object('kolobok','колобок','колобка','Золотистый сказочный колобок'),object('boat','лодка','лодку','Деревянная лодка'),object('doll','кукла','куклу','Кукла в сиреневом платье с игрушечными суставами')],
  moods:[mood('happy','весёлый','весёлая','Весёлое жёлтое личико'),mood('sad','грустный','грустная','Грустное жёлтое личико'),mood('surprised','удивлённый','удивлённая','Удивлённое жёлтое личико'),mood('angry','сердитый','сердитая','Сердитое жёлтое личико'),mood('sleepy','сонный','сонная','Сонное жёлтое личико')],
  pairs:[{id:'stroke_squirrel',actionId:'stroke',objectId:'squirrel'},{id:'break_chocolate',actionId:'break',objectId:'chocolate'},{id:'catch_kolobok',actionId:'catch',objectId:'kolobok'},{id:'push_boat',actionId:'push',objectId:'boat'},{id:'put_doll_to_bed',actionId:'put-to-bed',objectId:'doll'}],
- backgrounds:['assets/backgrounds/game-background.png','assets/backgrounds/cover-background.png']};
+ backgrounds:['assets/backgrounds/game-background.png'],
+ interface:['assets/interface/machine-frame.png','assets/interface/machine-lever.png']};
 })();
